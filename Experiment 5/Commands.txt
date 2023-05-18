@@ -1,0 +1,7 @@
+1) Run .ps1 file
+
+./ps_payload64.ps1
+
+2) Show encrypted and decrypted payloads
+
+Done!
