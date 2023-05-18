@@ -1,0 +1,9 @@
+1) Compile .cpp file
+
+2) Open notepad
+
+3) Get PID for "notepad.exe"
+
+4) Run .exe file from terminal
+
+> exp4.exe <PID>
